@@ -48,10 +48,10 @@ const Navbar = () => {
 
 	return (
 		<nav className="main-nav">
-			{/* <div className="logo" ><h3 href="/">Code2Face</h3></div> */}
+			{/* <div className="logo" ><h3 href="/">CodeCam</h3></div> */}
             <NavbarBrand className="logo">
                 <Link key='logo' to="/">
-                    Code2Face
+                    CodeCam
                     {/* Test */}
                 </Link>
             </NavbarBrand>

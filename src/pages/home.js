@@ -131,7 +131,7 @@ const Home = () => {
                 <div className='central r-shadow'>
                     <div className='d-flex flex-column'>
                         <div className='jcontent'>
-                            <h3 className='t-color'>Welcome to <span className='myfont'>Code2Face</span></h3>
+                            <h3 className='t-color'>Welcome to <span className='myfont'>CodeCam</span></h3>
 
                         </div>
                         <div className='jcontent mt4'>
