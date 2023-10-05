@@ -1,0 +1,48 @@
+.editorcomponent{
+	text-align: left !important;
+}
+
+.cm-editor{
+	border: solid 2px gray;
+	border-radius: 10px;
+}
+
+.ͼ5j {
+    height: 55vh !important;
+}
+
+.ioarea{
+    margin: 5px;
+    min-width: 20vw;
+}
+
+.etxt {
+    color: red;
+}
+
+.ctxt{
+    color: green;
+}
+
+.run {
+    padding: 0.2em 1em;
+    margin-left: 1em;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .cm-editor{
+        width: 80vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .cm-editor{
+        width: 70vw;
+    }
+}
