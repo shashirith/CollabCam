@@ -8,14 +8,73 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
-a{
+a {
     text-emphasis: none;
     text-decoration: none !important;
     color: black !important;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    font-size: 1rem;
+    top: 6px;
+    right: 10px;
+    position: absolute;
+}
+
+/* select {
+    -webkit-appearance: none;
+    appearance: none;
+}  */
+
+select.classic {
+    background-image:
+        linear-gradient(45deg, transparent 50%, blue 50%),
+        linear-gradient(135deg, blue 50%, transparent 50%),
+        linear-gradient(to right, skyblue, skyblue);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        100% 0;
+    background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+    background-repeat: no-repeat;
+}
+
+select.classic:focus {
+    background-image:
+        linear-gradient(45deg, white 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, white 50%),
+        linear-gradient(to right, gray, gray);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        100% 0;
+    background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+    background-repeat: no-repeat;
+    border-color: grey;
+    outline: 0;
+}
+
+.custom-select {
+    font-size: 18px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 0;
+    outline: 1px solid;
+    border-right: 16px solid transparent;
 }
 
 .mmb {
@@ -27,9 +86,9 @@ a{
     display: flex;
     flex-direction: column;
     min-height: 100%;
-  }
-  
-.disclaimer{
+}
+
+.disclaimer {
     margin: auto;
     text-align: center;
     width: 75vw;
@@ -37,7 +96,7 @@ a{
 
 
 /* home */
-.main-home{
+.main-home {
     flex: 1;
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
@@ -53,13 +112,13 @@ a{
     height: 90%;
 }
 
-.cen-container{
+.cen-container {
     padding: 1em;
     margin: auto;
     max-width: min(85vw, 1000px);
 }
 
-.blk-txt{
+.blk-txt {
     color: black;
     background-color: white;
     border-radius: 25px;
@@ -69,7 +128,7 @@ a{
     font-family: 'Kalam', cursive;
 }
 
-.t-color{
+.t-color {
     color: rgb(2, 115, 176);
     font-weight: 700;
 }
@@ -78,21 +137,21 @@ a{
     align-items: center;
     margin: auto;
     margin-top: 2em;
-    width: 400px; 
+    width: 400px;
     /* width: fit-content; */
     padding: 1em;
     border: solid 1px rgba(54, 55, 58, 0.125);
-    border-radius: 2em; 
+    border-radius: 2em;
 }
 
 .lcentral {
     align-items: center;
     margin: auto;
-    width: min(40vw,450px);
-    
+    width: min(40vw, 450px);
+
     padding: 1em;
     border: solid 1px rgba(54, 55, 58, 0.125);
-    border-radius: 2em; 
+    border-radius: 2em;
 }
 
 .fwid {
@@ -112,41 +171,41 @@ a{
     box-shadow: 0 12px 8px -4px lightblue;
 }
 
-.genInp{
+.genInp {
     width: 180px !important;
     display: inline !important;
     margin: 0 !important;
     border-radius: 5px 0px 0px 5px !important;
 }
 
-.gen-btn{
+.gen-btn {
     border-radius: 0px 5px 5px 0px !important;
 
 }
 
 
 .form-check .form-check-input {
-    margin-left: -1em ;
+    margin-left: -1em;
     float: none !important;
 }
 
-.afterHoverText{
+.afterHoverText {
     visibility: hidden;
     font-size: x-small;
 }
 
-.infoIcon:hover ~ .afterHoverText{
+.infoIcon:hover~.afterHoverText {
     visibility: visible;
 }
 
 /* motivation page */
-.mot p{
+.mot p {
     font-size: large;
     /* font-family: ; */
 }
 
 /* error page  */
-.errorpage{
+.errorpage {
     margin: auto;
     margin-top: 3em;
     text-align: center;
@@ -160,19 +219,23 @@ a{
 
 
 @media only screen and (max-width: 600px) {
-    .central{
+    .central {
         width: 75vw;
     }
-    .lcentral{
+
+    .lcentral {
         width: 75vw;
     }
+
     .fwid {
         width: 65vw;
     }
-    .cen-container{
+
+    .cen-container {
         padding-left: 0;
     }
-    .main-nav{
+
+    .main-nav {
         width: 100vw !important;
     }
 }
@@ -180,17 +243,13 @@ a{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .genInp{
+    .genInp {
         display: block !important;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
+@media only screen and (min-width: 1200px) {}

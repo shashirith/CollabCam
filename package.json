@@ -29,9 +29,11 @@
     "react-bootstrap": "^2.7.4",
     "react-bootstrap-icons": "^1.10.3",
     "react-dom": "^18.2.0",
+    "react-dropdown-select": "^4.10.0",
     "react-hot-toast": "^2.4.1",
     "react-router-dom": "^6.11.2",
     "react-scripts": "^5.0.1",
+    "react-select": "^5.7.7",
     "short-unique-id": "^4.4.4",
     "socket.io-client": "^4.6.1"
   },

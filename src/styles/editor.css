@@ -26,11 +26,11 @@
 
 .run {
     padding: 0.2em 1em;
-    margin-left: 1em;
     background-color: black;
     color: white;
     border-radius: 10px;
     border: 0;
+    width: 80px;
 }
 
 @media only screen and (max-width: 768px) {
